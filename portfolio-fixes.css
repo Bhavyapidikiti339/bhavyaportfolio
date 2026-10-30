@@ -1,0 +1,17 @@
+/* Accessibility and interaction fixes for the exported portfolio. */
+.portfolio-link{display:inline-block;border:1px solid #00f3ff;border-radius:999px;padding:.65rem 1.25rem;color:#00f3ff;position:relative;z-index:1}
+.portfolio-link:hover{background:#00f3ff;color:#000}
+a:focus-visible,button:focus-visible,[role="button"]:focus-visible{outline:3px solid #00f3ff!important;outline-offset:5px}
+.contact-icon{transition:background-color .3s}
+.contact-icon-neon-cyan{background:rgb(0 243 255 / .1);color:#00f3ff}
+.contact-icon-neon-purple{background:rgb(188 19 254 / .1);color:#bc13fe}
+.contact-icon-white{background:rgb(255 255 255 / .1);color:white}
+.group:hover .contact-icon-neon-cyan{background:rgb(0 243 255 / .2)}
+.group:hover .contact-icon-neon-purple{background:rgb(188 19 254 / .2)}
+.group:hover .contact-icon-white{background:rgb(255 255 255 / .2)}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+ [style*="opacity"]{opacity:1!important}
+ [style*="transform"]{transform:none!important}
+ canvas{display:none!important}
+}
